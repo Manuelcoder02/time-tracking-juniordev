@@ -1,0 +1,274 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url(/assets/webfont/Rubik-VariableFont_wght.ttf);
+}
+
+body {
+  font-family: "Rubik";
+  font-size: 1em;
+  background-color: hsl(226, 43%, 10%);
+}
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1,
+h3 {
+  font-size: 1.2em;
+}
+img {
+  max-width: 100%;
+}
+.inner-container {
+  padding: 3em 0;
+}
+/* -- HEADER STYLING -- */
+.header-info {
+  background-color: hsl(246, 80%, 60%);
+  color: hsl(236, 100%, 87%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  border-radius: 20px;
+  margin-bottom: -1em;
+  position: relative;
+  gap: 1em;
+}
+
+.header-image {
+  width: 30%;
+}
+.person {
+  border: 3px solid #fff;
+  border-radius: 100%;
+}
+.report {
+  font-weight: 300;
+  padding-bottom: 0.5em;
+}
+.name {
+  font-weight: 700;
+  font-size: 1.4em;
+  color: #fff;
+}
+
+.header-report {
+  background-color: hsl(235, 46%, 20%);
+  /* margin-top: -1em; */
+  padding: 2em;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  z-index: -1;
+  display: flex;
+  justify-content: space-between;
+  color: hsl(235, 45%, 61%);
+  font-weight: 300;
+}
+
+a:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:visited {
+  color: hsl(235, 45%, 61%);
+}
+
+a:hover,
+a:focus {
+  color: #fff;
+}
+
+/* .header-report h3 {
+  cursor: pointer;
+}
+
+.header-report h3:active,
+.header-report h3:hover {
+  color: #fff;
+}
+
+.focus-color {
+  color: #fff;
+} */
+
+/* -- SECTIONS STYLING -- */
+section {
+  margin-top: 2em;
+}
+.top {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  text-align: right;
+  padding: 0 2em;
+}
+
+.work-top {
+  background-color: hsl(15, 100%, 70%);
+}
+
+.bottom {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 20px;
+  position: relative;
+  margin-top: -1em;
+  padding: 2em;
+  color: hsl(236, 100%, 87%);
+  cursor: pointer;
+}
+
+/* .top-image img {
+  width: 20%;
+} */
+.top-image {
+  width: 20%;
+  margin-left: auto;
+}
+.bottom:hover,
+.bottom:active {
+  background-color: hsl(228, 45%, 44%);
+}
+.title,
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title {
+  padding-bottom: 0.3em;
+}
+.title-text {
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #fff;
+}
+.current-time {
+  font-size: 1.5em;
+  color: #fff;
+  font-weight: 300;
+}
+.menu {
+  cursor: pointer;
+}
+.ellipsis {
+  color: red;
+}
+
+.ellipsis:hover,
+.ellipsis:active {
+  color: #fff;
+}
+.play-top {
+  background-color: hsl(195, 74%, 62%);
+}
+.study-top {
+  background-color: hsl(348, 100%, 68%);
+}
+.exercise-top {
+  background-color: hsl(145, 58%, 55%);
+  padding-bottom: 1em;
+}
+.social-top {
+  background-color: hsl(264, 64%, 52%);
+}
+.self-care-top {
+  background-color: hsl(43, 84%, 65%);
+}
+.social .bottom {
+  margin-top: -1.7em;
+}
+/* -- ATTRIBUTION STYLING -- */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: #fff;
+}
+.attribution a {
+  color: orange;
+}
+
+/* -- MEDIA QUERY FOR SCREENS BIGGER THAN 500px -- */
+@media (min-width: 500px) {
+  .inner-container {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+    grid-template-areas:
+      "header work play study"
+      "header exercise social self-care";
+    place-items: center;
+  }
+  .header {
+    grid-area: header;
+  }
+
+  .work {
+    grid-area: work;
+  }
+  .play {
+    grid-area: play;
+  }
+  .study {
+    grid-area: study;
+  }
+  .exercise {
+    grid-area: exercise;
+  }
+  .social {
+    grid-area: social;
+  }
+  .self-care {
+    grid-area: self-care;
+  }
+  .header-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .header-image {
+    margin-bottom: 1em;
+  }
+  .name {
+    font-size: 2em;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 1em;
+  }
+  .header-report {
+    display: flex;
+    flex-direction: column;
+  }
+  .header-report div {
+    margin-bottom: 1em;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 0.5em;
+  }
+  /* .social .bottom {
+    border: 3px solid yellow;
+    margin-top: -4em;
+  } */
+  section {
+    margin-top: 0;
+  }
+  .current-time {
+    font-size: 2.6em;
+  }
+  .previous-time {
+    padding-top: 0.5em;
+  }
+}
