@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Manuelcoder02](https://www.frontendmentor.io/solutions/time-tracker-tfYIjLmZ7v)
+- Live Site URL: [Time Tracker](https://time-tracking-juniordev.vercel.app/m)
 
 ## My process
 
@@ -61,7 +61,7 @@ The a:link, a:visited.
 
 - Frontend Mentor - [Manuelcoder02](https://www.frontendmentor.io/profile/Manuelcoder02)
 - Twitter - [juniorDev @sotundenuel](https://www.twitter.com/@sotundenuel)
-- GitHub - [Manuel codes](https://www.github.com/manuelcodes)
+- GitHub - [Manuel codes](https://github.com/Manuelcoder02)
 
 
 ## Acknowledgments
